@@ -1,3 +1,12 @@
+#' Adds columns to data in preparation for feature generation using the epitopes package
+#'
+#' @param data a *data.table*
+#'
+#' @return Data table of class *windowed_epit_dt* containing the new columns.
+#'
+#' @author Jodie Ashford (\email{ashfojsm@@aston.ac.uk})
+
+#' @export
 prepare_columns <- function(data){
   data <- as.data.table(data)
   class(data) <- c(class(data), "windowed_epit_dt")
