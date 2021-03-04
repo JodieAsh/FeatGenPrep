@@ -21,7 +21,7 @@ prepare_columns <- function(data){
   data$Info_TSeq_taxid <- '0000'
   data$Info_TSeq_orgname <- 'name'
 
-  data <- epitopes::calc_features(data, max.N = 2)
+  # data <- epitopes::calc_features(data, max.N = 2)
   return(data)
 
 }
