@@ -8,7 +8,7 @@
 
 #' @export
 prepare_columns <- function(data){
-  data <- as.data.table(data)
+  data <- data.table::as.data.table(data)
   class(data) <- c(class(data), "windowed_epit_dt")
   data$Info_sourceOrg_id <- "0000"
   data$Info_protein_id <- "0000"
